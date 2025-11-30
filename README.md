@@ -13,6 +13,7 @@ Ce projet démontre un pipeline CI/CD utilisant GitHub Actions. Il met en place 
 
 ## **Structure du projet**
 
+```
 python-ci-cd-pipeline/
 ├── app/
 │   ├── main.py
@@ -26,28 +27,29 @@ python-ci-cd-pipeline/
 │       └── ci.yml
 ├── .gitignore
 └── README.md
+```
 
 ## **Lancer les tests en local**
 
-pip install -r app/requirements.txt
+pip install -r app/requirements.txt   
 pytest
 
 ## **Builder et lancer l'application avec Docker**
 
-docker build -t python-ci-cd-pipeline .
-docker run -p 8000:8000 python-ci-cd-pipeline
+docker build -t python-ci-cd-pipeline .  
+docker run -p 8000:8000 python-ci-cd-pipeline  
 
-L’API sera disponible sur :
+L’API sera disponible sur:  
 [http://localhost:8000/health](http://localhost:8000/health)
 
 ## **Pipeline GitHub Actions**
 
-Un workflow CI est exécuté automatiquement :
+Un workflow CI est exécuté automatiquement:
 
 * à chaque push sur la branche main
 * à chaque pull request vers main
 
-Il effectue :
+Il effectue:
 
 1. Installation de Python
 2. Installation des dépendances
