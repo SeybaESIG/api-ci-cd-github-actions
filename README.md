@@ -16,7 +16,7 @@ Ce projet démontre un pipeline CI/CD utilisant GitHub Actions. Il met en place 
 python-ci-cd-pipeline/
 ├── app/
 │   ├── main.py
-│   ├── **init**.py
+│   ├── __init__.py
 │   └── requirements.txt
 ├── tests/
 │   └── test_app.py
